@@ -69,10 +69,8 @@ function next(){
     masterPlay.classList.remove('fa-play-circle')
     masterPlay.classList.add('fa-pause-circle')
 }
-// listen to events 
 audioElement.addEventListener('timeupdate',()=>{
-    //update seekbar
-    progress= parseInt((audioElement.currentTime/audioElement.duration)*100)
+    progress=parseInt((audioElement.currentTime/audioElement.duration)*100)
     if(parseInt(audioElement.duration)===parseInt(audioElement.currentTime)){
         next()
     }
