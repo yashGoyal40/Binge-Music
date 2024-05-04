@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('bg.jpg');
+    background-color: black;
+    /* background-size: cover; */
+    display: flex;
+    /* justify-content: center; */
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+    width: 100vh;
+}
+
+.animated-text {
+    padding-left: 5%;
+    font-size: 36px;
+    color: #576068;
+    margin-bottom: 30px;
+    animation: animateText 2s ease-in-out infinite alternate;
+}
+
+@keyframes animateText {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.highlight {
+    color: #fbfdfe;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px; 
+    font-size: 18px;
+    transition: background-color 0.3s;
+    border: 2px solid transparent; /* Add border */
+    position: relative; /* Add position for pseudo-element */
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 17px; /* Match button border-radius */
+    border: 2px solid #333; /* Match border color with button background */
+    z-index: -1; /* Push behind button text */
+    transition: transform 0.3s ease-out; /* Add transition for animation */
+    transform: scale(0); /* Start with scale 0 for animation */
+}
+
+.button:hover::before {
+    transform: scale(1); /* Scale up on hover for animation */
+}
+
+.button:hover {
+    background-color: #555;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Binge Music</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="android-chrome-512x512.png" type="image/icon type">
+</head>
+<body>
+    <nav>
+        <div class="brand">
+            <img src="fevicon2.png" alt="Binge Music">
+            <span style="margin-left: 10px;">Binge Music</span>
+        </div>
+        <ul>
+            <li class="li"><a href="" target="_main">About</a></li>
+            <li class="li1"><a href="loginpage.html" target="_main">Login</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songList">
+            <h1>Best of Indian Hip Hop </h1>
+            <div class="songdiv">
+                <div class="songItem">
+                    <img src="covers/1.jpg" alt="1">
+                    <span>AAGE CHAL</span>
+                    <span class="timestamp">3:49</span>
+                    <span class="inplayicon"><i id="1" class="far songItemPlay fa-2x fa-play-circle"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/2.jpg" alt="1">
+                    <span>KOHINOOR</span>
+                    <span class="timestamp">3:18</span>
+                    <span class="inplayicon"><i id="2" class="far songItemPlay fa-2x fa-play-circle"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/3.jpg" alt="1">
+                    <span>VYANJAN</span>
+                    <span class="timestamp">3:30</span>
+                    <span class="inplayicon"><i id="3" class="far songItemPlay fa-2x fa-play-circle"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/4.jpg" alt="1">
+                    <span>36</span>
+                    <span class="timestamp">4:06</span>
+                    <span class="inplayicon"><i id="4" class="far songItemPlay fa-2x fa-play-circle"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/5.jpg" alt="1">
+                    <span>LOST</span>
+                    <span class="timestamp">3:21</span>
+                    <span class="inplayicon"><i id="5" class="far songItemPlay fa-2x fa-play-circle"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/6.jpg" alt="1">
+                    <span>VO KEHTI THI</span>
+                    <span class="timestamp">2:25</span>
+                    <span class="inplayicon"><i id="6" class="far songItemPlay fa-2x fa-play-circle"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/7.jpg" alt="1">
+                    <span>ERA</span>
+                    <span class="timestamp">3:55</span>
+                    <span class="inplayicon"><i id="7" class="far songItemPlay fa-2x fa-play-circle"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/8.jpg" alt="1">
+                    <span>DUCH</span>
+                    <span class="timestamp">2:38</span>
+                    <span class="inplayicon"><i id="8" class="far songItemPlay fa-2x fa-play-circle"></i></span>
+                </div>
+                <!-- Add more song items as needed -->
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" class="myProgressBar" id="myProgressBar" min="0" max="100" value="0">
+        <div class="icons">
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="67" alt="" id="gif" style="margin:12px 0px 0px 0px;"><span id="masterSongName"></span>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+    <script src="https://kit.fontawesome.com/edd8616115.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
